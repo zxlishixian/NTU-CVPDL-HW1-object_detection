@@ -1,0 +1,7 @@
+# YOLO dataset format
+path: c:/Users/11958/Desktop/vscode-c/c/cv/hw1/data_yolo
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: object
