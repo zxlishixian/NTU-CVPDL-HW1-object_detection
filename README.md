@@ -85,7 +85,9 @@ pip install ultralytics pandas numpy pillow ipython opencv-python jupyterlab
 
 ## 運行cell2 利用yolo架構開始訓練
 
+
 這個cell的程式運行後正式開始利用data_yolo中的數據集開始訓練，會在與ipynb文件同層目錄下產生run/detect文件夾後,在裡面產生train，train1，train2...文件夾（每訓練一個新模型就會產生一個新的train文件夾），train文件夾裡面有pt後綴即為訓練的模型參數配置，還有一些其他記錄訓練過程的文件
+
 ---
 
 
@@ -107,9 +109,11 @@ RUN_NAME       = r"pred_test/result_picture"                                    
 SUB_CSV_PATH   = r"C:\Users\11958\Desktop\vscode-c\c\cv\hw1\runs\detect\pred_test\sub\submission.csv"
 
 運行後會在runs/detect目錄下產生一個pred_test文件夾：
+
 裡面的result_picture文件夾用於存放對test中的圖片預測的結果圖片，給每一個被檢測的物體標記框與置信度；
 sub文件夾用於存放產生的submission文件，如果重複運行每一次產生的文件會覆蓋重名submission文件，所以要記得每一次運行都要更改
 SUB_CSV_PATH   = r"C:\Users\11958\Desktop\vscode-c\c\cv\hw1\runs\detect\pred_test\sub\submission.csv"和out_csv = Path(r"runs/detect/pred_test/sub") / "submission_17.csv"的路徑
+
 ---
 
 ## 運行cell5 將讀取pred_test/result_picture的前五張圖片，便於直接判斷該次預測表現是否良好
