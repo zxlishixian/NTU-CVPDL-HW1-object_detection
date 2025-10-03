@@ -97,9 +97,13 @@ pip install ultralytics pandas numpy pillow ipython opencv-python jupyterlab
 請將這四行的參數改為你實際的路徑：
 
 MODEL_PATH     = r"C:\Users\11958\Desktop\vscode-c\c\cv\hw1\runs\detect\train22\weights\last.pt"    # 你的权重
+
 TEST_IMG_DIR   = r"C:\Users\11958\Desktop\vscode-c\c\cv\hw1\data\test\img"      # 测试图目录
+
 PROJECT_DIR    = r"C:\Users\11958\Desktop\vscode-c\c\cv\hw1\runs\detect"        # Ultralytics project 路径
+
 RUN_NAME       = r"pred_test/result_picture"                                     # 会拼成 runs/detect/pred_test/result_picture
+
 SUB_CSV_PATH   = r"C:\Users\11958\Desktop\vscode-c\c\cv\hw1\runs\detect\pred_test\sub\submission.csv"
 
 運行後會在runs/detect目錄下產生一個pred_test文件夾：
